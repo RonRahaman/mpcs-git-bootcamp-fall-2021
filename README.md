@@ -1,2 +1,1 @@
-This is my basic version of my_abs.  
-No types or error handling.
+No I've added exception handling.
