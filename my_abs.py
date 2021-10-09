@@ -1,9 +1,13 @@
 import math
+import numbers
+
 def my_abs(x):
-    try:
+    if isinstance(x, numbers.Real):
         if x < 0:
             return -x
         else:
             return x
-    except TypeError:
+    elif isinstance(x, numbers.Complex):
+        return math.sqrt(x.real ** 2 + x.imag ** 2)
+    else:
         return math.nan
